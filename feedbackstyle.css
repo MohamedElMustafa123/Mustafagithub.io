@@ -1,0 +1,117 @@
+/*sets margin and padding sets it to 0. font family selected for the entire page is bebas neue*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue";
+    box-sizing: border-box;
+    outline: none;
+}
+
+/*body takes up the entire viewport and background image is set*/
+body{ 
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: url(images_and_videos/feedbackbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*to place logo on the top left of the page*/
+#logo{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+/*width and background color of the container*/
+.container{
+    width: 360px;
+    background: white;
+}
+
+/*the form width is set to 100%, text is centered, and padding is set*/
+.container form{
+    width: 100%;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+/*stlye for the heading*/
+form h1{
+    padding: 15px 0;
+    color: red;
+}
+
+/*info class is set to relative*/
+form .info{
+    position: relative;
+}
+
+/*color of the placeholder text*/
+input::placeholder{
+    color: red;
+}
+
+/*style for the area where the input is held within the form*/
+form input{
+    width: 100%;
+    height: 50px;
+    margin: 4px 0;
+    border: 1px solid grey;
+    border-radius: 3px;
+    background: white;
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+/*styling the icons in the input field and moving it to the left of the input field*/
+.info i{
+    color: red;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 15px;
+}
+
+/*color of the placeholder for the text area*/
+textarea::placeholder{
+    color: red;
+}
+
+/*styling the text area*/
+form textarea{
+    padding: 5px 10px;
+    background: white;
+    font-size: 15px;
+    width: 100%;
+    margin: 5px 0;
+    resize: none;
+    border-radius: 3px;
+}
+
+/*styling of the submit button*/
+form button{
+    width: 200px;
+    margin-top: 5px;
+    color: red;
+    background-color: white;
+    box-shadow: 0 0 8px grey;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 5px 5px;
+    transition: 0.3s; /*transition delay*/
+    border-radius: 5px;
+    border: none;
+}
+
+/*styling on hover*/
+form button:hover{
+    color: white;
+    background: var(--clr);
+    letter-spacing: 0.1em;
+    box-shadow: 0 0 35px var(--clr);
+    cursor: pointer;
+}

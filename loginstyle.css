@@ -1,0 +1,137 @@
+body{
+    margin: 0; /*setting margin and padding to 0*/
+    padding: 0;
+    font-family: "Bebas Neue";
+    height: 100vh; /*making the body fill 100% of the viewport*/
+    overflow:hidden;
+    background: url(images_and_videos/loginbg.jpg);
+    background-size: cover; /*background img covers the entire screen*/
+    background-repeat: no-repeat; /*image doesnt repeat*/
+
+}
+
+/*adding the dark overlay over the background*/
+body::before{
+    z-index: -1; /*making sure its behind the login form*/
+    content:'';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /*color of overlay*/
+
+}
+
+/*logo margins*/
+#logo{
+    margin: 30px 30px;
+}
+
+/*styling of the login container*/
+.container{
+    /*container being centered*/
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 350px;/*width of the container*/
+    background: white;
+    padding: 20px 10px; /*padding inside the container*/
+}
+
+/*styling for the heading (login)*/
+.container h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    color: red;
+    border-bottom: 1px solid black;
+}
+
+/*styling of the form within the container*/
+.container form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+/*styling of the text field */
+form .text_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+/*styling for the text input by the user*/
+.text_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+/*Styling for the label like username and password*/
+.text_field label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: #adadad;
+    font-size: 16px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+/*Styling of the underline*/
+.text_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background: red;
+    transition: 0.3s;
+}
+
+/*when the input is in focus the labels move up and the color red*/
+.text_field input:focus ~ label,
+.text_field input:focus ~ label{
+    top: -5px;
+    color: red;
+
+}
+
+/*Underline effect*/
+.text_field input:focus ~ span::before,
+.text_field input:focus ~ span::before{
+    width: 100%;
+}
+
+/*styling for the forgot password text*/
+.forgot_pass{
+    margin: 5px 0 20px 5px;
+    color: red;
+    cursor: pointer;
+}
+
+/*on hover for the forgot pass text*/
+.forgot_pass:hover{
+    text-decoration: underline;
+}
+
+/*styling for the submit button*/
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid; /*adding a border*/
+    background: red;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer; /*changing cursour on hover*/
+    outline: none;
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekken 8 - Feedback</title>
+
+    <!--links stylesheet-->
+    <link rel="stylesheet" href="feedbackstyle.css">
+
+    <!--to add favicon/logo of the page-->
+    <link rel="icon" type="image/png" href="images_and_videos/tekken 8 favicon.png">
+
+    <!--to use custom font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+    <!--to use icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--on click redirects back to the home page-->
+    <a href="index.html">
+        <img id="logo" src="images_and_videos/tekken 8 logo2.png" height="120px">
+    </a>
+    <!--container for the form-->
+    <div class="container">
+        <form>
+            <!--form heading-->
+            <h1>Your feedback is valuable</h1>
+
+            <!--div that holds the input for the name of the user-->
+            <div class="info">
+                <input type="text" placeholder="Name">
+
+                <!--user icon-->
+                <i class="far fa-user"></i>
+            </div>
+
+            <!--div that holds the email input from the user-->
+            <div class="info">
+                <input type="email" placeholder="Email">
+
+                <!--email icon-->
+                <i class="far fa-envelope"></i>
+            </div>
+
+            <!--text area for user feedback-->
+            <textarea cols="15" rows="5" placeholder="Your feedback"></textarea>
+
+            <!--submit button-->
+            <button style="--clr:#FF0000">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

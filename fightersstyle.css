@@ -1,0 +1,211 @@
+/*To use custome font*/
+@font-face {
+    src: url(Fonts/tarrgetcondital.ttf);
+    font-family: tarrgetcondital;
+}
+
+/*Sets default style for all elements in the page*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Bebas Neue";
+}
+
+/*Styling of the nav bar*/
+.nav_bar li, a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+/*Effects when you hover over the elements in the nav bar*/
+.nav_bar li, a:hover {
+    color:red;
+    font-size:18px;
+    transition: 0.3s;
+
+}
+
+/*Style of the header section*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 10%;
+    background-color: black;
+}
+
+/*Turns mouse cursor into pointer on the logo image*/
+#logo{
+    cursor: pointer;
+}
+
+/*nav bar container*/
+.nav_bar{
+    list-style: none;
+    align-items: center;
+}
+
+/*style for the items in the nav bar. spacing between the items*/
+.nav_bar li{
+    display:inline-block;
+    padding: 0 20px;
+
+}
+
+/*Styling for the login button*/
+#btn1 button{
+    color: black;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 5px 5px;
+    transition: 0.5s;
+    border-radius: 5px;
+    border: none;
+}
+
+/*Hover effect for the login button*/
+#btn1 button:hover{
+    background: var(--clr);
+    letter-spacing: 0.1em;
+    box-shadow: 0 0 35px var(--clr);
+    cursor: pointer;
+}
+
+/*Styling for the h1 heading*/
+h1{
+    font-family: "tarrgetcondital";
+    text-align: center;
+    padding: 60px 60px;
+    font-size: 50px;
+    color: black;
+}
+
+/*container styling*/
+.container{
+    padding: 30px 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*Styling for the fighter div*/
+.fighter{
+    margin: 20px 20px;
+    position: relative;
+    overflow: hidden; /*Prevents image from overflowing*/
+    padding-bottom: 30px;
+}
+
+/*Image styling*/
+.fighter img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /*covers the entire container*/
+    vertical-align: middle; /*centers image vertically within the line of text, removes the gap between the img and the h2 text*/
+    clip-path: polygon(0% 0%, 85% 0%, 100% 15%, 100% 100%, 0% 100%);/*clips the top right of the image*/
+    transition: clip-path 0.5s ease, transform 0.5s ease; /*to transition smoothly*/
+    cursor: pointer;
+}
+
+/*hover effect over the image*/
+.fighter img:hover{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 100% 100%, 0% 100%);
+    transform: scale(1.1);
+}
+
+/*styling for the fighter names*/
+.fighter h2{
+    margin:0;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    background-color: red;
+    /*to make sure the name sticks to the image without gaps*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: 0.5s ease;
+}
+
+/*Hover effect of the fighter names*/
+.fighter h2:hover{
+    color: white;
+    cursor: pointer;
+}
+
+/*Footer background color set to black*/
+footer{
+    background-color: black;
+}
+
+/*styling of the footer container*/
+.footer_container{
+    width: 100%; 
+    padding-top: 50px;
+}
+
+/*Container for the icons*/
+.icons{
+    display:flex;
+    justify-content: center; /*Centers the icons horizontally*/
+}
+
+/*Styling of the icons*/
+.icons a{
+    padding: 10px;
+    background-color: red;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/*Color of the icon and the size*/
+.icons a i{
+    font-size: 20px;
+    color: black;
+}
+
+/*Hover effect on the icon*/
+.icons a i:hover{
+    color:white;
+    transition: 0.3s;
+}
+
+/*Styling of the footer nav*/
+.footer_nav{
+    margin: 30px 0;
+
+}
+
+/*Styling of the unorderd list inside of th footer nav div*/
+.footer_nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/*Styling of the links*/
+.footer_nav ul li a{
+    color: white;
+    margin: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/*Hover effect on the links*/
+.footer_nav ul li a:hover{
+    color: red;
+    transition: 0.3s;
+}
+
+/*Styling of the credits*/
+.footer_btm{
+    padding: 20px;
+    text-align: center;
+    color: white;
+}

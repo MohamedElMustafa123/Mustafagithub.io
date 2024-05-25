@@ -1,0 +1,255 @@
+@font-face {
+    src: url(Fonts/tarrgetcondital.ttf);
+    font-family: tarrgetcondital;
+}
+
+/*Sets default style for all elements in the page*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Bebas Neue";
+}
+
+/*Styling of the nav bar*/
+.nav_bar li, a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+/*Effects when you hover over the elements in the nav bar*/
+.nav_bar li, a:hover {
+    color:red;
+    font-size:18px;
+    transition: 0.3s;
+
+}
+
+/*Style of the header section*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 10%;
+    background-color: black;
+}
+
+/*Turns mouse cursor into pointer on the logo image*/
+#logo{
+    cursor: pointer;
+}
+
+/*nav bar container*/
+.nav_bar{
+    list-style: none;
+    align-items: center;
+}
+
+/*style for the items in the nav bar. spacing between the items*/
+.nav_bar li{
+    display:inline-block;
+    padding: 0 20px;
+
+}
+
+/*Styling for the login button*/
+#btn1 button{
+    color: black;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 5px 5px;
+    transition: 0.5s;
+    border-radius: 5px;
+    border: none;
+}
+
+/*Hover effect for the login button*/
+#btn1 button:hover{
+    background: var(--clr);
+    letter-spacing: 0.1em;
+    box-shadow: 0 0 35px var(--clr);
+    cursor: pointer;
+}
+
+/*Styling for the reviews section*/
+#reviews{
+    display: flex; /*display set to flex*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;/*flex direction set to column*/
+    width: 100%;
+}
+
+/*Styling for the main heading */
+.reviews_heading{
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    display: flex;
+    margin: 30px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews_heading h1{
+    font-family: "tarrgetcondital";
+    font-size: 50px;
+    font-weight: 400;
+    color: black;
+    padding: 10px 20px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/*Styling for the review box*/
+.rev_box{
+    width: 500px;/*width of the box is 500px*/
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1); /*adding shadow*/
+    background-color: white;
+    padding: 20px;
+    margin: 15px;
+}
+
+/*Styling for the profile section*/
+.profile{
+    display: flex;
+    align-items: center;/*centering items vertically*/
+}
+
+/*Styling for the profile picture*/
+.profile_pic{
+    height: 50px;
+    width: 50px;
+    overflow: hidden; /*hides overflow*/
+    border-radius: 50%; /*To make it a circle*/
+    margin-right: 10px;
+}
+
+
+.profile_pic img{
+    /*makes images cover entire container*/
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;/*positioning the image to the center */
+}
+
+/*Styling for the username section*/
+.username{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+/*Styling for the username text*/
+.username strong{
+    color:red;
+    font-size: 16px;
+    letter-spacing: 0.5px; /*spacing between letters*/
+}
+
+/*stars styling*/
+.stars{
+    color: yellow; /*color set to yellow*/
+}
+
+/*Styling of the top area of the review box*/
+.top_of_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/*styling for the review text*/
+.review p{
+    font-size: 14px ;
+    color: black;
+
+
+}
+
+/*effect when hovering over the review box*/
+.rev_box:hover{
+    transform: translateY(-5px);
+    transition: all ease 0.7s;
+}
+
+/*Footer background color set to black*/
+footer{
+    background-color: black;
+}
+
+/*styling of the footer container*/
+.footer_container{
+    width: 100%; 
+    padding-top: 50px;
+}
+
+/*Container for the icons*/
+.icons{
+    display:flex;
+    justify-content: center; /*Centers the icons horizontally*/
+}
+
+/*Styling of the icons*/
+.icons a{
+    padding: 10px;
+    background-color: red;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/*Color of the icon and the size*/
+.icons a i{
+    font-size: 20px;
+    color: black;
+}
+
+/*Hover effect on the icon*/
+.icons a i:hover{
+    color:white;
+    transition: 0.3s;
+}
+
+/*Styling of the footer nav*/
+.footer_nav{
+    margin: 30px 0;
+
+}
+
+/*Styling of the unorderd list inside of th footer nav div*/
+.footer_nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/*Styling of the links*/
+.footer_nav ul li a{
+    color: white;
+    margin: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/*Hover effect on the links*/
+.footer_nav ul li a:hover{
+    color: red;
+    transition: 0.3s;
+}
+
+/*Styling of the credits*/
+.footer_btm{
+    padding: 20px;
+    text-align: center;
+    color: white;
+}

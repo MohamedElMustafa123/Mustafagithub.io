@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekken 8 - FAQs</title>
+
+    <!--linking stylehseet-->
+    <link rel="stylesheet" href="faqstyle.css">
+
+    <!--adding favicon-->
+    <link rel="icon" type="image/png" href="images_and_videos/tekken 8 favicon.png">
+
+    <!--to use custom font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!--to use icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <!--logo of the website-->
+        <a href="index.html"><img id="logo" src="images_and_videos/tekken 8 logo2.png" height="80px" alt="logo"></a>
+
+        <!--creating a nav bar that links to other pages of the website-->
+        <nav>
+            <ul class="nav_bar">
+                <li><a href="fighters.html">Fighters</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="feedback.html">FEEDBACK</a></li>
+            </ul>
+        </nav>
+
+        <!--log in button and setting a custom variable for styling-->
+        <a id="btn1" href="login.html" style="--clr:#FF0000"><button>LOG IN</button></a>
+    </header>
+
+    <main>
+        <section class="section1">
+
+            <!--heading for the section-->
+            <h2 id="sec1_heading">FAQS</h2>
+
+            <!--div for the the faq, each faq goes in its own div-->
+            <div class="faq">
+                <!--question container-->
+                <div class="question">
+                    <h3>Does Tekken 8 have crossplay?</h3>
+
+                    <!--SVG (Scalable Vector Graphics) for the drop down arrow. canvas width is 15, canvas height 10-->
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+
+                        <!--the d attribute contains commands, color is set to white, width of the stroke is 7-->
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <!--container for answer-->
+                <div class="answer">
+                    <p>Yes, there is full crossplay across PlayStation, Xbox, and PC.</p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="question">
+                    <h3>Is Tekken 8 on PlayStation Plus?</h3>
+
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>Tekken 8 is not currently available on any of the PS+ tiers.</p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="question">
+                    <h3>Is Tekken 8 on Xbox Game Pass?</h3>
+
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>Tekken 8 is not currently available on Xbox Game Pass for console or PC.</p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="question">
+                    <h3>Tekken 8 platforms</h3>
+
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>Tekken 8 is available on PS5, Xbox Series X|S, and PC via Steam.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--footer section-->
+    <footer>
+
+        <!--div for the footer-->
+        <div class="footer_container">
+
+            <!--creating a div for the icons and adding those icons within the div-->
+            <div class="icons">
+                <a href="https://www.instagram.com/tekken/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/TEKKEN?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/@BandaiNamcoAmerica" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.facebook.com/tekken/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+
+            <!--div for the footer navigation links-->
+            <div class="footer_nav">
+
+                <!--unordered list-->
+                <ul>
+                    <li><a href="fighters.html">Fighters</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="feedback.html">FEEDBACK</a></li>
+                </ul>
+            </div>
+
+            <!--div for the bottom of the footer that contains credits-->
+            <div class="footer_btm">
+                <p>Copyright &copy; Designed by Mohamed</p>
+            </div>
+        </div>
+
+
+    </footer>
+    
+    <script src="javascript_files/faqscript.js"></script>
+</body>
+</html>

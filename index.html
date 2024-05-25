@@ -3,10 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
+    <title>Tekken 8</title>
+
+    <!--links the stylesheet-->
+    <link rel="stylesheet" href="indexstyle.css">
+    
+    <!--To add an icon to the webpage-->
+    <link rel="icon" type="image/png" href="images_and_videos/tekken 8 favicon.png">
+
+    <!--to use custome font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!--to use icons (used in the footer)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h1>HI TEST</h1>
+    <header>
+        <!--logo of the website-->
+        <a href="index.html"><img id="logo" src="images_and_videos/tekken 8 logo2.png" height="80px" alt="logo"></a>
+
+        <!--creating a nav bar that links to other pages of the website-->
+        <nav>
+            <ul class="nav_bar">
+                <li><a href="fighters.html">Fighters</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="feedback.html">FEEDBACK</a></li>
+            </ul>
+        </nav>
+
+        <!--log in button and setting a custom variable for styling-->
+        <a id="btn1" href="login.html" style="--clr:#FF0000"><button>LOG IN</button></a>
+    </header>
+
+    <main>
+        <section id="first_section">
+
+            <!--adding the main home video-->
+            <div id="home_video">
+                <video src="images_and_videos/Tekken 8 trailer.mp4" autoplay muted loop></video>
+
+                <!--adding the button over the video and setting a custom variable for styling-->
+                <div id="btn_over_vid" style="--clr:#FF0000">
+                    <button>Download Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!--About us section-->
+        <section id="second_section">
+
+            <!--div with the class wrapper for styling-->
+            <div class="wrapper">
+
+                <!--text for the about us section-->
+                <div class="text">
+                    <h2 id="heading1">ABOUT US</h2>
+                    <p class="about_us_p">TEKKEN 8 continues the tragic saga of the Mishima bloodline and its world-shaking father-and-son grudge matches. After defeating his father, Heihachi Mishima, Kazuya continues his conquest for global domination, using the forces of G Corporation to wage war on the world. Jin is forced to face his fate head-on as he is reunited with his long-lost mother and seeks to stop his father Kazuya's reign of terror.</p>
+                    <p class="about_us_p">Experience the next chapter in the longest-running videogame storyline with 32 redesigned, unique fighters and master the all-new ‘Heat’ system to crush your opponents. Enjoy high-fidelity graphics, developed for the new generation of hardware, to showcase every moment of impact and aggressive super moves.</p>
+                    <p class="about_us_p">With a variety of single-player content to explore, such as the brand-new Arcade Quest mode and an in-depth customization system for both playable and avatar characters, TEKKEN 8 introduces the most thrilling experience yet.</p>
+                </div>   
+
+                <!--image that is to the right of the text-->
+                <div class="image1">
+                    <img id="img1" src="images_and_videos/background1.jpg" height="400">
+                </div>
+            </div>
+            <!--awards image-->
+            <img id="awards_img" src="images_and_videos/tekken 8 awards.png" width="1000">
+        </section>
+
+        <section class="product">
+
+            <!--heading of the product section-->
+            <h2 id="heading2">BUY NOW</h2>
+
+            <!--buttons for the next and previous function-->
+            <button class="pre_btn"><img src="images_and_videos/arrow left.png" height="30"></button>
+            <button class="nxt_btn"><img src="images_and_videos/arrow right.png" height="30"></button>
+
+            <!--div for the product section-->
+            <div class="product_container">
+
+                <!--div for the product card-->
+                <div class="product_card">
+
+                    <!--main content of the card-->
+                    <div class="product_img">
+                        <span class="discount_tag">50% off</span>
+                        <img class="product_thumb" src="images_and_videos/tekken 8 standard edition1.jpg">
+                        <button class="card_btn">Buy now</button>
+                    
+                    </div>
+
+                    <!--product info and pricings-->
+                    <div class="product_info">
+                        <h2 class="product_name">Standard edition</h2>
+                        <span class="price">$30</span>
+                        <span class="actual_price">$60</span>
+
+                    </div>
+                </div>
+
+                <div class="product_card">
+                    <div class="product_img">
+                        <img class="product_thumb" src="images_and_videos/tekken 8 ult edition1.jpg">
+                        <button class="card_btn">Buy now</button>
+                    
+                    </div>
+                    <div class="product_info">
+                        <h2 class="product_name">Ultimate edition</h2>
+                        <span class="price">$70</span>
+
+                    </div>
+                </div>
+
+                <div class="product_card">
+                    <div class="product_img">
+                        <img class="product_thumb" src="images_and_videos/tekken 8 ult edition1.jpg">
+                        <button class="card_btn">Buy now</button>
+                    
+                    </div>
+                    <div class="product_info">
+                        <h2 class="product_name">Digital Ultimate edition</h2>
+                        <span class="price">$70</span>
+
+                    </div>
+                </div>
+
+                <div class="product_card">
+                    <div class="product_img">
+                        <img class="product_thumb" src="images_and_videos/launch edition.jpg">
+                        <button class="card_btn">Buy now</button>
+                    
+                    </div>
+                    <div class="product_info">
+                        <h2 class="product_name">Launch edition</h2>
+                        <span class="price">$80</span>
+
+                    </div>
+                </div>
+
+                <div class="product_card">
+                    <div class="product_img">
+                        <img class="product_thumb" src="images_and_videos/collectors edition.jpg">
+                        <button class="card_btn">Buy now</button>
+                    
+                    </div>
+                    <div class="product_info">
+                        <h2 class="product_name">Collectors edition</h2>
+                        <span class="price">$150</span>
+                    </div>
+                </div>
+
+                <div class="product_card">
+                    <div class="product_img">
+                        <span class="discount_tag">20% off</span>
+                        <img class="product_thumb" src="images_and_videos/premium edt.jpg">
+                        <button class="card_btn">Buy now</button>
+                    
+                    </div>
+                    <div class="product_info">
+                        <h2 class="product_name">Preimum Collectors edition</h2>
+                        <span class="price">$160</span>
+                        <span class="actual_price">$200</span>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!--footer section-->
+    <footer>
+
+        <!--div for the footer-->
+        <div class="footer_container">
+
+            <!--creating a div for the icons and adding those icons within the div-->
+            <div class="icons">
+                <a href="https://www.instagram.com/tekken/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/TEKKEN?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/@BandaiNamcoAmerica" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.facebook.com/tekken/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+
+            <!--div for the footer navigation links-->
+            <div class="footer_nav">
+
+                <!--unordered list-->
+                <ul>
+                    <li><a href="fighters.html">Fighters</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="feedback.html">FEEDBACK</a></li>
+                </ul>
+            </div>
+
+            <!--div for the bottom of the footer that contains credits-->
+            <div class="footer_btm">
+                <p>Copyright &copy; Designed by Mohamed</p>
+            </div>
+        </div>
+
+
+    </footer>
     
+    <!--linking the js script file-->
+    <script src="javascript_files/indexscript.js"></script>
 </body>
 </html>

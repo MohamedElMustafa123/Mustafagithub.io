@@ -1,0 +1,221 @@
+/*to use downloaded font*/
+@font-face {
+    src: url(Fonts/tarrgetcondital.ttf);
+    font-family: tarrgetcondital;
+}
+
+
+/*Sets default style for all elements in the page*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Bebas Neue";
+}
+
+/*Styling of the nav bar*/
+.nav_bar li, a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+/*Effects when you hover over the elements in the nav bar*/
+.nav_bar li, a:hover {
+    color:red;
+    font-size:18px;
+    transition: 0.3s;
+
+}
+
+/*Style of the header section*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 10%;
+    background-color: black;
+}
+
+/*Turns mouse cursor into pointer on the logo image*/
+#logo{
+    cursor: pointer;
+}
+
+/*nav bar container*/
+.nav_bar{
+    list-style: none;
+    align-items: center;
+}
+
+/*style for the items in the nav bar. spacing between the items*/
+.nav_bar li{
+    display:inline-block;
+    padding: 0 20px;
+
+}
+
+/*Styling for the login button*/
+#btn1 button{
+    color: black;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 5px 5px;
+    transition: 0.5s;
+    border-radius: 5px;
+    border: none;
+}
+
+/*Hover effect for the login button*/
+#btn1 button:hover{
+    background: var(--clr);
+    letter-spacing: 0.1em;
+    box-shadow: 0 0 35px var(--clr);
+    cursor: pointer;
+}
+
+/*styling of the heading*/
+#sec1_heading{
+    font-family: "tarrgetcondital";
+    margin: 60px 50px;
+    font-size: 50px;
+}
+
+/*styling for the FAQ section*/
+.section1{
+    min-height: 100vh; /*ensures that the section takes the entire viewport height*/
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*style of the container of the faq question and answer*/
+.faq{
+    width: 700px;
+    margin-top: 32px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid red; /*to create the red line at the bottom of the question*/
+    cursor: pointer;
+}
+
+/*styling of the question*/
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*styling for the text in the div with class "question"*/
+.question h3{
+    font-size: 28px; /*font size of the question*/
+}
+
+/*styling of the answer*/
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+/*styling for the text in the div with class "answer"*/
+.answer p{
+    padding-top: 16px;
+    line-height: 25px;
+    font-size: 24px;
+}
+
+/*styling for the answer when it is expanded*/
+.faq.active .answer{
+    max-height: 300px;
+    animation: fade 0.7s ease-in-out;
+}
+
+/*when the faq is expanded the arrow rotates 180degrees*/
+.faq.active svg{
+    transform: rotate(180deg);
+}
+
+/*creating a fade animation*/
+@keyframes fade{
+    from{
+        opacity: 0; /*starting opacity is 0*/
+        transform: translateY(-10px); /*starts with translating y by -10px*/
+    }
+    to{
+        opacity: 1; /*ending with opacity 1*/
+        transform: translateY(0px); /*ending with its original position*/
+    }
+}
+
+/*Footer background color set to black*/
+footer{
+    background-color: black;
+}
+
+/*styling of the footer container*/
+.footer_container{
+    width: 100%; 
+    padding-top: 50px;
+}
+
+/*Container for the icons*/
+.icons{
+    display:flex;
+    justify-content: center; /*Centers the icons horizontally*/
+}
+
+/*Styling of the icons*/
+.icons a{
+    padding: 10px;
+    background-color: red;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/*Color of the icon and the size*/
+.icons a i{
+    font-size: 20px;
+    color: black;
+}
+
+/*Hover effect on the icon*/
+.icons a i:hover{
+    color:white;
+    transition: 0.3s;
+}
+
+/*Styling of the footer nav*/
+.footer_nav{
+    margin: 30px 0;
+
+}
+
+/*Styling of the unorderd list inside of th footer nav div*/
+.footer_nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/*Styling of the links*/
+.footer_nav ul li a{
+    color: white;
+    margin: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/*Hover effect on the links*/
+.footer_nav ul li a:hover{
+    color: red;
+    transition: 0.3s;
+}
+
+/*Styling of the credits*/
+.footer_btm{
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
